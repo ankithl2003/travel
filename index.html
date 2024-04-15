@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .destination {
+            margin-bottom: 20px;
+        }
+        .destination img {
+            width: 100%; /* Responsive image */
+            max-width: 400px; /* Maximum width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px; /* Optional: adds rounded corners */
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to the Travel Planner</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#plan">Plan Your Trip</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<div class="container" id="home">
+    <h2>Discover Your Next Adventure</h2>
+    <p>Welcome to our Travel Planner website! Here, you can explore exciting destinations, plan your trips, and get all the information you need for an unforgettable journey.</p>
+</div>
+
+<div class="container" id="destinations">
+    <h2>Explore Destinations</h2>
+    <!-- Destination: Bengaluru -->
+    <div class="destination">
+        <h3>Bengaluru</h3>
+        <img src="https://st3.depositphotos.com/24655854/34137/i/450/depositphotos_341374464-stock-photo-bangalore-capital-largest-city-indian.jpg" alt="Beautiful view of Bengaluru">
+        <p>Bengaluru (also called Bangalore) is the capital of India's southern Karnataka state. Known as the Silicon Valley of India, it's a major tech hub and also known for its parks and nightlife.</p>
+    </div>
+    <!-- Destination: Delhi -->
+    <div class="destination">
+        <h3>Delhi</h3>
+        <img src="https://media.istockphoto.com/id/510795912/photo/india-gate.webp?b=1&s=170667a&w=0&k=20&c=Nts8vpG6WNkm8s3GSY-8LGmRGpwmzzJtowWLmSRvVks=" alt="Historic sites in Delhi">
+        <p>Delhi, India’s capital territory, is a massive metropolitan area in the country's north. In Old Delhi, a neighborhood dating to the 1600s, stands the imposing Mughal-era Red Fort, a symbol of India, and the sprawling Jama Masjid mosque, whose courtyard accommodates 25,000 people.</p>
+    </div>
+    <!-- Destination: Mumbai -->
+    <div class="destination">
+        <h3>Mumbai</h3>
+        <img src="https://media.istockphoto.com/id/1577632531/photo/mumbai-downtown.webp?b=1&s=170667a&w=0&k=20&c=yqCHL2BMxlaCXkUt0EkECzR1I1XGOT7d2Y8lNd6igYE=" alt="Iconic Gateway of India in Mumbai">
+        <p>Mumbai (formerly Bombay) is the big city dream of India, home to Bollywood and the largest tropical forest in an urban zone. It's famous for its vibrant street life and the iconic Gateway of India.</p>
+    </div>
+    <!-- Destination: Goa -->
+    <div class="destination">
+        <h3>Goa</h3>
+        <img src="https://media.istockphoto.com/id/503760697/photo/landscape-goa.jpg?s=612x612&w=0&k=20&c=MY7cuDM5KW1fk1FyRuyf7nGrfP1dWOVh9VzXgWg2EJg=" alt="Sunny beaches of Goa">
+        <p>Goa is known for its stretches of endless silver sand and white beaches, its crystal clear waters, green mountainous highlands, and its idyllic lifestyle which embraces any newcomer into its fold.</p>
+    </div>
+</div>
+
+<div class="container" id="plan">
+    <h2>Plan Your Trip</h2>
+    <form>
+        <label for="destination">Destination:</label><br>
+        <input type="text" id="destination" name="destination"><br>
+        <label for="date">Travel Dates:</label><br>
+        <input type="text" id="date" name="date"><br>
+        <label for="preferences">Preferences:</label><br>
+        <textarea id="preferences" name="preferences"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p>Have any questions? Reach out to us through the information below.</p>
+    <p>Email: info@travelplanner.com</p>
+    <p>Phone: 123-456-7890</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Travel Planner</p>
+</footer>
+
+</body>
+</html>
