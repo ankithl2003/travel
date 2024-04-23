@@ -22,4 +22,11 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+    // Initialize datepicker
+flatpickr('.date-picker', {
+    dateFormat: 'Y-m-d', // Set desired date format
+    minDate: 'today', // Set minimum selectable date to today
+    // You can add more options as needed
+});
+
 };
