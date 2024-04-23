@@ -4,57 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Planner</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #007bff;
-            color: #ffffff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            background: #333;
-            overflow: hidden;
-        }
-        nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        .container {
-            padding: 20px;
-        }
-        .destination {
-            margin-bottom: 20px;
-        }
-        .destination img {
-            width: 100%; /* Responsive image */
-            max-width: 400px; /* Maximum width */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 8px; /* Optional: adds rounded corners */
-        }
-        footer {
-            background-color: #007bff;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -75,6 +25,8 @@
 </div>
 
 <div class="container" id="destinations">
+    <h2>Explore Destinations</h2>
+    div class="container" id="destinations">
     <h2>Explore Destinations</h2>
     <!-- Destination: Bengaluru -->
     <div class="destination">
@@ -104,11 +56,11 @@
 
 <div class="container" id="plan">
     <h2>Plan Your Trip</h2>
-    <form>
+    <form id="tripForm">
         <label for="destination">Destination:</label><br>
-        <input type="text" id="destination" name="destination"><br>
+        <input type="text" id="destination" name="destination" required><br>
         <label for="date">Travel Dates:</label><br>
-        <input type="text" id="date" name="date"><br>
+        <input type="text" id="date" name="date" required><br>
         <label for="preferences">Preferences:</label><br>
         <textarea id="preferences" name="preferences"></textarea><br>
         <input type="submit" value="Submit">
@@ -125,19 +77,16 @@
 <footer>
     <p>&copy; 2024 Travel Planner</p>
 </footer>
- <script src="assets/js/scrollreveal.min.js"></script>
-<script>const sr=ScrollReveal({
-    origin:'top',
-    distance:'60px',
-    duration:3000,
-    delay: 400,
-    reset:true//Animations repeat
-})
 
-sr.reveal(`.home__data,.explore__data,.explore__user, .footer__container`,{})
-sr.reveal(`.home__card`,{delay:600,distance:'100px',interval:100})
-sr.reveal(`.about__data,.join__image`,{origin:'right'})
-sr.reveal(`.about__image, .join__data`,{origin:'left'})
-sr.reveal(`.popular__card`,{interval:200})</script>
+<!-- Popup Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Thank you for submitting your travel plan! We'll contact you back shortly.</p>
+  </div>
+</div>
+
+<script src="assets/js/scrollreveal.min.js"></script>
+<script src="scripts.js"></script>
 </body>
 </html>
